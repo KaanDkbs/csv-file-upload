@@ -12,8 +12,12 @@
     <input type="submit" value="Dosyayı Gönder" />
     <?php 
     	session_start();
-    	echo @$_SESSION["hata"];
-    	session_destroy();
+    	if(isset($_SESSION["hata"]))
+     {
+      echo $_SESSION["hata"];
+      session_destroy();
+     }
+    	
     ?>
 </form>
 </body>

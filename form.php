@@ -13,10 +13,10 @@
     <?php 
     	session_start();
     	if(isset($_SESSION["hata"]))
-     {
-      echo $_SESSION["hata"];
-      session_destroy();
-     }
+        {
+          echo $_SESSION["hata"];
+          session_destroy();
+        }
     	
     ?>
 </form>

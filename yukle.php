@@ -10,7 +10,7 @@ if($_POST)
 			{
 				$yol="yuklenenler/".$_FILES["dosya"]["name"];
 				move_uploaded_file($_FILES["dosya"]["tmp_name"] , $yol);
-				echo "başarılı";
+				header('Location: liste.php');
 			
 			}
 			else 
